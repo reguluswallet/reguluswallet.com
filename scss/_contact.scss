@@ -44,6 +44,14 @@ section.contact {
                     }
                 }
             }
+            &.social-github {
+                a {
+                    background-color: #24292e;
+                    &:hover {
+                        background-color: darken(#24292e, 5%);
+                    }
+                }
+            }
         }
     }
 }

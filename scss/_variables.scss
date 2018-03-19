@@ -1,10 +1,16 @@
 // Variables
-
+@font-face {
+  font-family: 'clear_sansregular';
+  src: url('../fonts/clearsans-regular-webfont.woff2') format('woff2'),
+  url('../fonts/clearsans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 // Gray and Brand Colors for use across theme
 
-$theme-primary:    #fdcc52;
-$theme-secondary:  #7b4397;
-$theme-tertiary:   #dc2430;
+$theme-primary:  #d4eef7;
+$theme-secondary:  #d4eef7;
+$theme-tertiary:   #1eb5e4;
 
 $gray-base:        #000;
 $gray-darker:      lighten($gray-base, 13.5%); // #222
