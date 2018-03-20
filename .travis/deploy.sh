@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 # print outputs and exit on first failure
