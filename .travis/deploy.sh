@@ -5,9 +5,11 @@ set -xe
 
 if [ $TRAVIS_BRANCH == "develop" ] ; then
 
+    echo "Set up permissions"
     # setup ssh agent, git config and remote
     eval "$(ssh-agent -s)"
-    ssh-add ~/.ssh/travis_rsa
+    chmod 600 travis_rsa
+    ssh-add travis_rsa
     git remote add deploy "travis@138.68.27.217:/var/www/develop.reguluswallet.com"
     git config user.name "suxur"
     git config user.email "suxur@me.com"
@@ -15,8 +17,10 @@ if [ $TRAVIS_BRANCH == "develop" ] ; then
     # commit compressed files and push it to remote
     git add .
     git status # debug
-    git commit -m "Deploy Site"
-    git push -f deploy HEAD:master
+    git commit -m "Deploy from Travis - build {$TRAVIS_BUILD_NUMBER}"
+    
+    echo "Send build"
+    git push -f deploy HEAD:develop
 
 else
 
