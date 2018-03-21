@@ -20,7 +20,7 @@ if [ $TRAVIS_BRANCH == "develop" ] ; then
     git commit -m "Deploy from Travis - build {$TRAVIS_BUILD_NUMBER}"
     
     echo "Send build"
-    git push -f deploy HEAD:develop
+    git push -f deploy HEAD:master
 
 else
 
