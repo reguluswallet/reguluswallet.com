@@ -74,14 +74,14 @@ section h2 {
 }
 
 #mainNav .navbar-brand {
-  color: #d4eef7;
+  color: #222222;
   font-family: 'clear_sansregular', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
 }
 
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-  color: #a9ddef;
+  color: #090909;
 }
 
 #mainNav .navbar-toggler {
@@ -122,10 +122,10 @@ section h2 {
     background-color: transparent;
   }
   #mainNav .navbar-brand {
-    color: fade(white, 70%);
+    color: #d4eef7;
   }
   #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-    color: white;
+    color: #a9ddef;
   }
   #mainNav .navbar-nav > li > a,
   #mainNav .navbar-nav > li > a:focus {
