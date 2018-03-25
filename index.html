@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116278672-1"></script>
+      <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-116278672-1');
+      </script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Regulus Wallet is a crypto wallet for Stellar. You can send and receive payments, view transactions and more. It is cross platform for iOS and Android and was built with React Native and Expo.">
+    <meta name="description"
+          content="Regulus Wallet is a crypto wallet for Stellar. You can send and receive payments, view transactions and more. It is cross platform for iOS and Android and was built with React Native and Expo.">
     <meta name="author" content="Joshua Payne">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=E6jOA3L6aw">
@@ -32,172 +42,179 @@
 
     <!-- Custom styles for this template -->
     <link href="css/new-age.min.css" rel="stylesheet">
+</head>
 
-  </head>
+<body id="page-top">
 
-  <body id="page-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">Regulus Wallet</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            Menu
+            <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#download">Download</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#features">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
-      </div>
-    </nav>
+    </div>
+</nav>
 
-    <header class="masthead">
-      <div class="container h-100">
+<header class="masthead">
+    <div class="container h-100">
         <div class="row h-100">
-          <div class="col-lg-7 my-auto">
-            <div class="header-content mx-auto">
-              <h1 class="mb-5">Regulus Wallet is a crypto wallet for Stellar Lumens (XLM) built in React Native.</h1>
-              <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Download for Free!</a>
-            </div>
-          </div>
-          <div class="col-lg-5 my-auto">
-            <div class="device-container">
-              <div class="device-mockup iphone6_plus portrait white">
-                <div class="device">
-                  <div class="screen">
-                    <video autoplay="" loop="" muted="" playsinline="" preload="auto" style="left:0;margin:auto;position:absolute;right:0;bottom:0;top:0;z-index:0;width:286px;">
-                      <source src="/img/preview.mp4" type="video/mp4"><track kind="captions" >
-                    </video>
-                  </div>
+            <div class="col-lg-7 my-auto">
+                <div class="header-content mx-auto">
+                    <h1 class="mb-5">Regulus Wallet is a crypto wallet for Stellar Lumens (XLM) built in React
+                        Native.</h1>
+                    <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Download for Free!</a>
                 </div>
-              </div>
             </div>
-          </div>
+            <div class="col-lg-5 my-auto">
+                <div class="device-container">
+                    <div class="device-mockup iphone6_plus portrait white">
+                        <div class="device">
+                            <div class="screen">
+                                <video autoplay="" loop="" muted="" playsinline="" preload="auto"
+                                       style="left:0;margin:auto;position:absolute;right:0;bottom:0;top:0;z-index:0;width:286px;">
+                                    <source src="/img/preview.mp4" type="video/mp4">
+                                    <track kind="captions">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </header>
+    </div>
+</header>
 
-    <section class="download bg-primary text-center" id="download">
-      <div class="container">
+<section class="download bg-primary text-center" id="download">
+    <div class="container">
         <div class="row">
-          <div class="col-md-8 mx-auto">
-            <h2 class="section-heading">Your Stellar account in your pocket!</h2>
-            <p>The app will be available on the App Store and Google Play. You can try it now with the Expo client, click one of the badges below to get started!</p>
-            <div class="badges">
-              <a class="badge-link" href="https://expo.io/@suxur/reguluswallet"><img src="img/app-store-badge.svg" alt="Regulus Wallet - App Store Badge"></a>
-              <a class="badge-link" href="https://expo.io/@suxur/reguluswallet"><img src="img/google-play-badge.svg" alt="Regulus Wallet - Google Play Badge"></a>
+            <div class="col-md-8 mx-auto">
+                <h2 class="section-heading">Your Stellar account in your pocket!</h2>
+                <p>The app will be available on the App Store and Google Play. You can try it now with the Expo client,
+                    click one of the badges below to get started!</p>
+                <div class="badges">
+                    <a class="badge-link" href="https://expo.io/@suxur/reguluswallet"><img src="img/app-store-badge.svg"
+                                                                                           alt="Regulus Wallet - App Store Badge"></a>
+                    <a class="badge-link" href="https://expo.io/@suxur/reguluswallet"><img
+                            src="img/google-play-badge.svg" alt="Regulus Wallet - Google Play Badge"></a>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
 
-    <section class="features" id="features">
-      <div class="container">
+<section class="features" id="features">
+    <div class="container">
         <div class="section-heading text-center">
-          <h2>Current Features, More to Come</h2>
-          <p class="text-muted">Check out what you can do with this wallet!</p>
-          <hr>
+            <h2>Current Features, More to Come</h2>
+            <p class="text-muted">Check out what you can do with this wallet!</p>
+            <hr>
         </div>
         <div class="row">
-          <div class="col-lg-4 my-auto">
-            <div class="device-container">
-              <div class="device-mockup iphone6_plus portrait black">
-                <div class="device">
-                  <div class="screen">
-                    <img src="img/transactions.jpg" class="img-fluid" alt="Transaction Screen - Regulus Wallet">
-                  </div>
+            <div class="col-lg-4 my-auto">
+                <div class="device-container">
+                    <div class="device-mockup iphone6_plus portrait black">
+                        <div class="device">
+                            <div class="screen">
+                                <img src="img/transactions.jpg" class="img-fluid"
+                                     alt="Transaction Screen - Regulus Wallet">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="col-lg-8 my-auto">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-wallet text-primary"></i>
-                    <h3>Transactions</h3>
-                    <p class="text-muted">Quickly view your account balance and payment transactions!</p>
-                  </div>
+            <div class="col-lg-8 my-auto">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="feature-item">
+                                <i class="icon-wallet text-primary"></i>
+                                <h3>Transactions</h3>
+                                <p class="text-muted">Quickly view your account balance and payment transactions!</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="feature-item">
+                                <i class="icon-arrow-up-circle text-primary"></i>
+                                <h3>Send Payment</h3>
+                                <p class="text-muted">Easily send payment to another account!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="feature-item">
+                                <i class="icon-arrow-down-circle text-primary"></i>
+                                <h3>Receive Payment</h3>
+                                <p class="text-muted">Share your public key by text, email or qr code!</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="feature-item">
+                                <i class="icon-lock text-primary"></i>
+                                <h3>Secure</h3>
+                                <p class="text-muted">Uses iOS Keychain Services to securely store your data.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-arrow-up-circle text-primary"></i>
-                    <h3>Send Payment</h3>
-                    <p class="text-muted">Easily send payment to another account!</p>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-arrow-down-circle text-primary"></i>
-                    <h3>Receive Payment</h3>
-                    <p class="text-muted">Share your public key by text, email or qr code!</p>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-lock text-primary"></i>
-                    <h3>Secure</h3>
-                    <p class="text-muted">Uses iOS Keychain Services to securely store your data.</p>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
 
-    <section class="contact bg-primary" id="contact">
-      <div class="container">
+<section class="contact bg-primary" id="contact">
+    <div class="container">
         <h2>We <i class="fa fa-heart"></i> new friends!</h2>
         <ul class="list-inline list-social">
-          <li class="list-inline-item social-github">
-            <a href="https://github.com/reguluswallet/reguluswallet">
-              <i class="fa fa-github"></i>
-            </a>
-          </li>
+            <li class="list-inline-item social-github">
+                <a href="https://github.com/reguluswallet/reguluswallet">
+                    <i class="fa fa-github"></i>
+                </a>
+            </li>
         </ul>
-      </div>
-    </section>
+    </div>
+</section>
 
-    <footer>
-      <div class="container">
+<footer>
+    <div class="container">
         <p>&copy; Regulus Wallet 2018. All Rights Reserved.</p>
         <!--<ul class="list-inline">-->
-          <!--<li class="list-inline-item">-->
-            <!--<a href="#">Privacy</a>-->
-          <!--</li>-->
-          <!--<li class="list-inline-item">-->
-            <!--<a href="#">Terms</a>-->
-          <!--</li>-->
+        <!--<li class="list-inline-item">-->
+        <!--<a href="#">Privacy</a>-->
+        <!--</li>-->
+        <!--<li class="list-inline-item">-->
+        <!--<a href="#">Terms</a>-->
+        <!--</li>-->
         <!--</ul>-->
-      </div>
-    </footer>
+    </div>
+</footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/new-age.min.js"></script>
+<!-- Custom scripts for this template -->
+<script src="js/new-age.min.js"></script>
 
-  </body>
-
+</body>
 </html>
